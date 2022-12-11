@@ -17,7 +17,7 @@
   - `bInheritHandle`: A value that specifies whether the handle is inheritable.
   - `dwOptions`: Additional options for the handle duplication.
 
-* The DuplicateHandle function will create a new handle with the specified access rights and options, and return it in the lpTargetHandle parameter. The attacker can then use this handle to access the resource that it represents, allowing them to perform actions on the resource that they would not normally be able to do.
+* The `DuplicateHandle` function will create a new handle with the specified access rights and options, and return it in the `lpTargetHandle` parameter. The attacker can then use this handle to access the resource that it represents, allowing them to perform actions on the resource that they would not normally be able to do.
 
 # VID
 
