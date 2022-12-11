@@ -6,7 +6,7 @@
 
 * Handle hijacking techniques are becoming increasingly prevalent as hackers develop more sophisticated methods of exploiting vulnerabilities in Windows systems. As such, it is important that system administrators understand the risks associated with handle hijacking and take proactive measures to protect their systems.
 
-#
+# DETAILS
 
 * To perform a handle hijacking attack, an attacker must first identify a handle that is being used by a legitimate process and that they want to access. This can be done using various techniques, such as scanning the handle table of a process, monitoring handle creation events, or using a tool that can enumerate handles on the system ,Once the attacker has identified the handle they want to access, they can use the `DuplicateHandle` function to create a copy of the handle with their own process. This function takes the following parameters:
   - `hSourceProcessHandle`: A handle to the process that contains the source handle.
@@ -18,3 +18,10 @@
   - `dwOptions`: Additional options for the handle duplication.
 
 * The DuplicateHandle function will create a new handle with the specified access rights and options, and return it in the lpTargetHandle parameter. The attacker can then use this handle to access the resource that it represents, allowing them to perform actions on the resource that they would not normally be able to do.
+
+# VID
+
+
+
+https://user-images.githubusercontent.com/60795188/206884063-ec573a88-4143-4f52-aac5-a66ba1036558.mp4
+
