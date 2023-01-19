@@ -121,7 +121,7 @@ wmain(
             break;
         }
     }
-    while (1);
+    getchar();
     return 0;
 }
 
